@@ -34,3 +34,8 @@ span {
   --btn-color-2: #aab8c2;
   --btn-color-3: #d9e4e9;
 }
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}

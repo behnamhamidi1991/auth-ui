@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--secondary-color);
+  height: 60px;
+  padding: 0 5%;
+}
+
+.loginRegisterBtn {
+  background-color: var(--btn-color-2);
+  color: #333;
+  padding: 5px 9px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 5px;
+  transition: all ease-in-out 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.loginRegisterBtn:hover {
+  background-color: var(--btn-color-3);
+}
+
+.loginRegisterIcon {
+  font-size: 13px;
+}
+
+.loginRegisterBtn span {
+  margin-top: 2px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 50px;
+}
+
+.navLinks .navLink {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navLink:hover {
+  color: var(--btn-color-2);
+}
