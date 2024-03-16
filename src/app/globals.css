@@ -25,3 +25,12 @@ p,
 span {
   font-family: "Roboto";
 }
+
+:root {
+  --primary-color: #233040;
+  --secondary-color: #42526e;
+  --text-color: #fefefe;
+  --btn-color: #6b7b8c;
+  --btn-color-2: #aab8c2;
+  --btn-color-3: #d9e4e9;
+}
