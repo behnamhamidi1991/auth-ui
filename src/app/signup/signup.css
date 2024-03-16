@@ -27,6 +27,7 @@ select:-webkit-autofill:focus {
   background-color: var(--secondary-color);
   padding: 40px 20px;
   border-radius: 10px;
+  position: relative;
 }
 
 .loginPage input {
@@ -55,4 +56,10 @@ select:-webkit-autofill:focus {
 
 .navigationBtn:hover {
   color: orange;
+}
+
+.spinner {
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }

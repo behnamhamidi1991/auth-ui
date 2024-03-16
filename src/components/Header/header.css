@@ -8,7 +8,7 @@
 }
 
 .loginRegisterBtn {
-  background-color: var(--btn-color-2);
+  background-color: var(--btn-color-3);
   color: #333;
   padding: 5px 9px;
   font-size: 13px;
@@ -22,7 +22,7 @@
   gap: 5px;
 }
 .loginRegisterBtn:hover {
-  background-color: var(--btn-color-3);
+  background-color: var(--btn-color-2);
 }
 
 .loginRegisterIcon {
