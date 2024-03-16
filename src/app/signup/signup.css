@@ -1,0 +1,58 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text-color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--primary-color) inset;
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginPage form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+  background-color: var(--secondary-color);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.loginPage input {
+  padding: 10px 14px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+.loginPage button {
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: var(--btn-color-3);
+  color: #333;
+  font-weight: 600;
+  font-family: "Poppins";
+  padding: 10px 0;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.navigationBtn {
+  font-weight: 700;
+}
+
+.navigationBtn:hover {
+  color: orange;
+}
