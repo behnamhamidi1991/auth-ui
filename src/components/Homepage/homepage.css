@@ -1,0 +1,25 @@
+.homepage {
+  padding: 100px 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.homepage-left {
+  background-color: tomato;
+  padding: 20px;
+}
+
+.homepage-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.homepage-left p {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.homepage-right {
+  background-color: steelblue;
+  padding: 20px;
+}
