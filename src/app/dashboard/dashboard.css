@@ -1,0 +1,57 @@
+.dashboard {
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard .dashboard-header h1 {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dashboard-body-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  grid-gap: 20px;
+}
+
+.dashboard-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-blog-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-blog-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.dashboard-blog-content form input {
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #333;
+}
+
+.dashboard-blog-content form textarea {
+  padding: 10px;
+  font-size: 13px;
+  color: #333;
+  border-radius: 4px;
+  height: 300px;
+  outline: none;
+}

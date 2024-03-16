@@ -14,8 +14,9 @@
 }
 
 .homepage-left p {
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .homepage-right {

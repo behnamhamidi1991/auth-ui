@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="userContainer">
-        <Link href="/" className="loginRegisterBtn">
+        <Link href="/login" className="loginRegisterBtn">
           <FaUserAlt className="loginRegisterIcon" />
           <span>Login & Register</span>
         </Link>
