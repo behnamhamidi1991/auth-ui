@@ -5,8 +5,7 @@
 }
 
 .homepage-left {
-  background-color: tomato;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .homepage-left h1 {
@@ -20,6 +19,70 @@
 }
 
 .homepage-right {
-  background-color: steelblue;
+  background-color: var(--secondary-color);
   padding: 20px;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.homepage-right-header {
+  margin-bottom: 16px;
+}
+
+.homepage-right-header h2 {
+  font-size: 30px;
+}
+
+.homepage-right-header p {
+  font-weight: 300;
+}
+
+.homepage-right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.homepage-right-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.homepage-right-box p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.readmoreBtn {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.homepage-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+  grid-gap: 20px;
+}
+
+.course-box {
+  background-color: var(--secondary-color);
+}
+
+.homepage-courses-content {
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.homepage-courses-content h3 {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.homepage-courses-content p {
+  font-size: 15px;
+}
+
+.home-page-courses-image {
+  width: 100%;
 }
