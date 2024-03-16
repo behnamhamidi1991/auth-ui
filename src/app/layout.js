@@ -4,6 +4,7 @@ import ReduxProvider from "@/redux/provider";
 import Header from "@/components/Header/Header";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthProvider } from "@/Context/authContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,11 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ReduxProvider>
+        <AuthProvider>
           <Header />
           {children}
           <ToastContainer />
-        </ReduxProvider>
+        </AuthProvider>
       </body>
     </html>
   );
