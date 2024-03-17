@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./login.css";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Spinner from "@/components/shared/Spinner";
 import axios from "axios";
-import { useAuth } from "@/Context/authContext";
+import { AuthContext } from "@/Context/authContext";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -16,7 +16,7 @@ const LoginPage = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const { setIsLoggedIn } = useAuth();
+  const { setIsLoggedIn } = useContext(AuthContext);
 
   useEffect(() => {}, [user]);
 

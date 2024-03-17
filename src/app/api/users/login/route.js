@@ -2,9 +2,10 @@ import connectDB from "@/db/dbConfig";
 import User from "@/models/userModel";
 import jwt from "jsonwebtoken";
 
+connectDB();
+
 export async function POST(request) {
   try {
-    connectDB();
     const reqBody = await request.json();
     const { email, password } = reqBody;
     console.log(reqBody);
@@ -21,7 +22,9 @@ export async function POST(request) {
       username: user.email,
     };
 
-    const token = jwt.sign(tokenData, process.TOKEN_SECRET);
+    const token = jwt.sign(tokenData, process.env.TOKEN_SECRET, {
+      expiresIn: "1d",
+    });
 
     // Create token
     const response = Response.json(
@@ -29,7 +32,8 @@ export async function POST(request) {
       { success: true }
     );
 
-    response.cookie.set("token", token, { httpOnly: false, path: "/" });
+    response.cookies.set("token", token, { httpOnly: true, path: "/" });
+    return response;
   } catch (error) {
     return Response.json({ error: error.message }, { status: 500 });
   }
